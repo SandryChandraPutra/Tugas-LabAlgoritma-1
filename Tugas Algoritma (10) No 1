@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+long pangkatrekursif(int x, int y);
+
+int main(){
+	int x,y;
+	cout << "MENGHITUNG PANGKAT DENGAN FUNGSI REKURSIF" << endl;
+	cout << "---------------------------------------" << endl;
+	cout << "Masukkan Nilai X   = ";
+	cin  >> x;
+	cout << "Masukkan Nilai Y = ";
+	cin  >> y;
+  cout << endl;
+	cout << x << " dipangkatkan " << y << " = " << pangkatrekursif(x,y) << endl;
+}
+long pangkatrekursif(int x, int y){
+	 if (y == 0)
+	 return 1 ;
+	 else
+	 return (x*pangkatrekursif(x,y-1));
+}
