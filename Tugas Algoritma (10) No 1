@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+long pangkat(int x, int y);
+
+int main(){
+	int x,y;
+	
+	cout << "MENGHITUNG PANGKAT DENGAN FUNGSI REKRUSIF" << endl;
+	cout << "---------------------------------------" << endl;
+	cout << "Masukkan Nilai X = ";
+	cin  >> x;
+	cout << "Masukkan Nilai Y = ";
+	cin  >> y;
+  cout << endl;
+	cout << x << " dipangkatkan " << y << " = " << pangkat(x,y) << endl;
+}
+
+long pangkat(int x, int y){
+	 if (y == 0)
+	 return 1 ;
+	 else
+	 return (x*pangkat(x,y-1));
+}
