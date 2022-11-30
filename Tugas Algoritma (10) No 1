@@ -6,7 +6,7 @@ long pangkat(int x, int y);
 int main(){
 	int x,y;
 	
-	cout << "MENGHITUNG PANGKAT DENGAN FUNGSI REKRUSIF" << endl;
+	cout << "MENGHITUNG PANGKAT DENGAN FUNGSI REKURSIF" << endl;
 	cout << "---------------------------------------" << endl;
 	cout << "Masukkan Nilai X = ";
 	cin  >> x;
